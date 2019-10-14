@@ -9,7 +9,7 @@ Convert that xml file to a json file in powershell
 Change output name to 'filename'.json
 Open ssh_keys.py
 	Add correct file path to data_folder
-	Add correct input file name to input_file
-	Add correct output file name to output_file
+	Add correct input file name to file_to_open
+	Add correct output file name to file_to_write
 Run ssh_keys.py to extract what ssh keys the devices with those IPs are using
 	Script will read and write from/to the file path folder
