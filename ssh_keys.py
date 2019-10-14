@@ -1,7 +1,11 @@
 import json
+from pathlib import PurePath
+data_folder = PurePath("c:/Temp/IP") #file path
+input_file = data_folder / "data.json" #input file
+output_file = data_folder / "ssh_keys_2048.txt" #output file
 
-#open json file (data.json) and write data to a new text file (ssh_keys_2048.txt) 
-with open('data.json') as f, open('ssh_keys_2048.txt', 'w') as t:
+#open json file and write data to a new text file 
+with open(input_file) as f, open(output_file 'w') as t:
     j_data = json.load(f)
 
     hosts = j_data['nmaprun']['host']
